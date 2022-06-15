@@ -9,6 +9,6 @@ test.each([
   ['-Alex', false],
   ['Alex_', false],
 ])('проверка', (name, result) => {
-  const validator = new Validator();
-  expect(validator.validateUsername(name)).toBe(result);
+  const res = Validator.validateUsername(name);
+  expect(res).toBe(result);
 });
